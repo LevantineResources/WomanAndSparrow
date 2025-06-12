@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title> NA </title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 0%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .c1 {top: 2%;right: 11%;width: 39%;}
+    .c2 {top: 35%;right: 53%;width: 23%;}
+    .c3 {top: 48%;right: 52%;width: 22%;}
+    .c4 {top: 56%;right: 9%;width: 32%;}
+    .c5 {top: 91%;right: 56%;width: 40%;}
+    .c6 {top: 68%;right: 57%;width: 28%;}
+    .c7 {top: 90%;right: 8%;width: 16%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page1.png" alt="Page 1 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+        <span class="word">كان في زمان<span class="tooltip">Once upon a time</span></span>
+        <span class="word">رجل<span class="tooltip">a man</span></span>
+        <span class="word">كبير<span class="tooltip">old</span></span>
+        <span class="word">ومرته<span class="tooltip">and his wife</span></span>, 
+        <span class="word">عايشين<span class="tooltip">were living</span></span>
+        <span class="word">ببيت<span class="tooltip">in a house</span></span>  
+        <span class="word">صغير<span class="tooltip">small</span></span>  
+        <span class="word">جنب<span class="tooltip">by</span></span>    
+        <span class="word">الجبل<span class="tooltip">a mountain</span></span>  
+      </div>
+      <div class="caption c2">
+        <span class="word">الزلمة<span class="tooltip">the man</span></span>
+        <span class="word">كان<span class="tooltip">was</span></span>
+        <span class="word">طيّب<span class="tooltip">kind</span></span>,
+        <span class="word">وكان<span class="tooltip">and he was</span></span>
+        <span class="word">يربّي<span class="tooltip">raising</span></span>
+        <span class="word">عصفور<span class="tooltip">a sparrow</span></span>
+        <span class="word">صغير<span class="tooltip">small</span></span>
+        <span class="word">بحبّ<span class="tooltip">with love</span></span>
+        <span class="word">وحنان<span class="tooltip">and care</span></span>
+      </div>
+      <div class="caption c3">
+          <span class="word">تعا<span class="tooltip">Come</span></span>
+          <span class="word">يا<span class="tooltip">Hey</span></span>
+          <span class="word">عصفوري<span class="tooltip">my sparrow</span></span>,
+          <span class="word">كول<span class="tooltip">eat</span></span>
+          <span class="word">شويّة<span class="tooltip">a little</span></span>
+          <span class="word">رز<span class="tooltip">rice</span></span>
+      </div>
+      <div class="caption c4">
+          <span class="word">بس<span class="tooltip">but</span></span>
+          <span class="word">مرته<span class="tooltip">his wife</span></span>
+          <span class="word">كانت<span class="tooltip">was</span></span>
+          <span class="word">عصبيّة<span class="tooltip">bad-tempered</span></span>
+          <span class="word">وبتكره<span class="tooltip">and she hates</span></span>
+          <span class="word">العصفور<span class="tooltip">the sparrow</span></span>
+      </div>
+      <div class="caption c5">
+          <span class="word">يوم من الأيام<span class="tooltip">one day</span></span>
+          <span class="word">العصفور<span class="tooltip">the sparrow</span></span>
+          <span class="word">أكل<span class="tooltip">ate</span></span>
+          <span class="word">من<span class="tooltip">from</span></span>
+          <span class="word">معجون<span class="tooltip">starch</span></span>
+          <span class="word">الغسيل<span class="tooltip">the laundry</span></span>
+      </div>
+      <div class="caption c6">
+          <span class="word">الحرمة<span class="tooltip">the woman</span></span>
+          <span class="word">عصّبت<span class="tooltip">got angry</span></span>
+          <span class="word">كتير<span class="tooltip">very</span></span>
+      </div>
+      <div class="caption c7">
+          <span class="word">يا<span class="tooltip">Hey</span></span>
+          <span class="word">حيوان<span class="tooltip">animal!</span></span>
+          <span class="word">خربتلي<span class="tooltip">you ruined for me</span></span>
+          <span class="word">شغلي<span class="tooltip">my work</span></span>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

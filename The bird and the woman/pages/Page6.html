@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title> NA </title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+    .image-wrapper {
+      position: relative;
+      height: 100%;
+      max-height: 1536px;
+      margin: 0 auto;
+      aspect-ratio: 2/3;
+    }
+    .image-wrapper img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+    .text-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .caption {
+      position: absolute;
+      font-size: 3.2vw;
+      background: rgba(0, 0, 0, 0);
+      padding: 0.4em 0.6em;
+      border-radius: 0.5em;
+      color: black;
+      pointer-events: auto;
+      line-height: 1.4;
+    }
+    .word {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted #666;
+    }
+    .word .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      background: #222;
+      color: #fff;
+      padding: 0.3em 0.6em;
+      border-radius: 0.4em;
+      font-size: 0.8em;
+      white-space: nowrap;
+      bottom: 0%;
+      right: 0;
+      transform: translateY(-0.4em);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 5;
+    }
+    .word:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(-100%);
+    }
+    .word:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .c1 {top: 3%;right: 56%;width: 30%;}
+    .c2 {top: 3%;right: 10%;width: 33%;}
+    .c3 {top: 58%;right: 62%;width: 13%;}
+    .c4 {top: 35%;right: 76%;width: 32%;}
+    .c5 {top: 34%;right: 3%;width: 15%;}
+    .c6 {top: 65%;right: 60%;width: 25%;}
+    .c7 {top: 88%;right: 14%;width: 27%;}
+
+  </style>
+</head>
+<body>
+  <div class="image-wrapper">
+    <img src="../images/page6.png" alt="Page 6 Comic">
+    <div class="text-layer">
+      <div class="caption c1">
+          <span class="word">ما في شي<span class="tooltip">Is there not something</span></span>
+          <span class="word">آخده<span class="tooltip">I take it</span></span>
+          <span class="word">معي<span class="tooltip">with me</span></span>
+          <span class="word">تذكار<span class="tooltip">as a souvenir</span></span>؟
+      </div>
+
+      <div class="caption c2">
+          <span class="word">عطاها<span class="tooltip">he gave her</span></span>
+          <span class="word">سلّتين<span class="tooltip">two baskets</span></span>
+          <span class="word">متل<span class="tooltip">like</span></span>
+          <span class="word">قبل<span class="tooltip">before</span></span>.
+      </div>
+
+      <div class="caption c3">
+          <span class="word">خُدي<span class="tooltip">take</span></span>
+          <span class="word">وحدة<span class="tooltip">one</span></span>!
+      </div>
+
+      <div class="caption c4">
+          <span class="word">رح<span class="tooltip">I will</span></span>
+          <span class="word">آخُد<span class="tooltip">take</span></span>
+          <span class="word">الأتقَل<span class="tooltip">the heavier one</span></span>
+      </div>
+
+      <div class="caption c5">
+          <span class="word">أكيد<span class="tooltip">surely</span></span>
+          <span class="word">فيها<span class="tooltip">in it</span></span>
+          <span class="word">دهب<span class="tooltip">gold</span></span>
+          <span class="word">أكتر<span class="tooltip">more</span></span>!
+      </div>
+
+      <div class="caption c6">
+          <span class="word">بس<span class="tooltip">but</span></span>
+          <span class="word">لما<span class="tooltip">when</span></span>
+          <span class="word">فتحتها<span class="tooltip">she opened it</span></span>...
+          <span class="word">طلعوا<span class="tooltip">they came out</span></span>
+          <span class="word">عفاريت<span class="tooltip">goblins</span></span>
+          <span class="word">ووحوش<span class="tooltip">and monsters</span></span>!
+      </div>
+
+      <div class="caption c7">
+          <span class="word">وكانت<span class="tooltip">and it was</span></span>
+          <span class="word">نهايتها<span class="tooltip">her end</span></span>
+          <span class="word">جزاء<span class="tooltip">punishment</span></span>
+          <span class="word">الطمع<span class="tooltip">of greed</span></span>
+          <span class="word">والجشع<span class="tooltip">and gluttony</span></span>.
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -5,8 +5,11 @@ This project is a comic adaptation of a **Japanese Folklore Story : The Woman an
 
 # Read Here
 
--> [View the comic online](https://LevantineResources.github.io/WomanAndSparrow)
+-> [View the comic online](https://LevantineResources.github.io/WomanAndSparrow) <-
 
+* Note : While Arabic is read **right to left**, the panels are positioned **left to right**
+
+  
 ## This features:
 - **Complete story**, adapted into Syrian Arabic in an engaging, conversational style
 - **Interactive text** with word-by-word English translations on hover
